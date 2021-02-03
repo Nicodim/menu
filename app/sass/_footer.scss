@@ -1,0 +1,328 @@
+.footer {
+    background-color: $black;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__top {
+    margin-bottom: 2rem;
+}
+
+.footer__tel-top {
+    display: block;
+    //display: flex;
+    //justify-content: space-between;
+    margin-top: 1.5rem;
+    color: white;
+    // border-bottom: solid 1px rgba(255,255,255,0.5);
+}
+
+.footer__top-item {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 0;
+    text-align: left;
+    h4,
+    h4 a {
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-family: "HSE Sans";
+        color: white;
+        margin-bottom: 0;
+        line-height: 1.04;
+        margin-bottom: 10px;
+    }
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+// .art__light .footer_private .footer__top-item h4 {
+//     font-family: 'HSE Sans';
+// }
+// .art__light .footer_private  .footer__menu-top {
+//     font-family: "HSE Sans";
+// }
+.footer__top-right-up,
+.footer__top-right-down {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer__menu {
+    margin-bottom: 40px;
+}
+
+.footer__review {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    display: block;
+    // justify-content: flex-end;
+    // align-items: center;
+    // border-bottom: solid 1px rgba(255,255,255,0.5);
+    p {
+        margin-bottom: 0rem;
+    }
+}
+
+.footer__review-button {
+    text-align: right;
+}
+
+.footer__review-text {
+    text-align: right;
+    margin-top: 10px;
+    color: white;
+}
+
+.footer__review-button .button__white-onblack {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.footer__menu-item {
+    margin-bottom: 50px;
+    ul {
+        padding-left: 0;
+        list-style: none;
+        li {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 0;
+            &:before {
+                display: none;
+            }
+        }
+        li a {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+.footer__menu-top {
+    font-family: "HSE Sans";
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+.footer__bottom {
+    // padding-top: 20px;
+    // border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.footer__bottom-left {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__social-wrap {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .f-error {
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.lab__footer .footer__social-wrap {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.footer__social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #333333;
+}
+
+.footer__tel-bottom {
+    display: block;
+    //display: flex;
+    //justify-content: space-between;
+    margin-top: 1.5rem;
+    color: white;
+    //border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.footer__title-contact {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-bottom: 0.7rem;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    margin-top: 2.5rem;
+}
+
+.footer__social-vk {
+    background-image: image_url('new_hope_images/vk_white.svg');
+}
+
+.footer__social-fb {
+    background-image: image_url('new_hope_images/fb_white.svg');
+}
+
+.footer__social-in {
+    background-image: image_url('new_hope_images/in_white.svg');
+}
+
+.footer__social-vim {
+    background-image: image_url('new_hope_images/vim_white.svg');
+}
+
+.footer__social-yt {
+    background-image: image_url('new_hope_images/yt_white.svg');
+}
+
+.footer__social-tg {
+    background-image: image_url('new_hope_images/tg_white.svg');
+}
+
+.art__footer-logo {
+    font-family: 'Druk';
+    font-size: 11rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    line-height: 0.8;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.art__footer-logo svg {
+    max-width: 430px;
+    width: 100%;
+}
+
+.art__footer {
+    .footer__top-item {
+        display: block;
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        h4 {
+            display: inline-block;
+        }
+    }
+    .footer__social-wrap {
+        text-align: left;
+    }
+}
+
+.footer__bottom-left {
+    width: 50%;
+}
+
+.footer__social-wrap {
+    width: 50%;
+}
+
+.gallery-footer .footer__social-wrap {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+}
+
+.art__footer-map {
+    text-align: center;
+    img {
+        max-width: 100%;
+        height: auto !important;
+    }
+}
+
+.footer__plus {
+    display: none;
+}
+
+.footer__top-logo {
+    padding-top: 6px;
+}
+
+.footer__hse-logo {
+    // display: inline-block;
+    vertical-align: top;
+    // margin-left: 40px;
+    margin-top: 10px;
+    font-size: 1rem;
+    a {
+        color: white;
+        text-decoration: underline !important;
+    }
+}
+
+.footer__menu-item-res {
+    column-count: 2;
+}
+
+.footer {
+    .clearfix:before,
+    .clearfix:after,
+    .container:before,
+    .container:after,
+    .container-fluid:before,
+    .container-fluid:after,
+    .row:before,
+    .row:after {
+        display: none;
+    }
+}
+
+.t-body {
+    .footer_private *,
+    .footer_private *::before,
+    .footer_private *::after {
+        box-sizing: border-box;
+    }
+    .footer_private .row {
+        box-sizing: border-box;
+    }
+}
+
+body.t-body {
+    margin: 0px;
+    background-color: #ffffff;
+    color: #333;
+    font-family: "HSE Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #17181a;
+    line-height: 1.5;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media(max-width: 1600px) {
+    .footer__menu-top {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: normal;
+    }
+}
+
+@media(max-width: 990px) {
+    .art__footer-map {
+        margin-top: 50px;
+    }
+    .gallery-footer .footer__social-wrap {
+        max-width: 100%;
+    }
+}

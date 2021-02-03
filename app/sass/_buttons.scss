@@ -1,0 +1,468 @@
+.buttons {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+}
+
+.widgets_buttons {
+    margin-bottom: $marginbig - 0.5rem;  
+}
+
+.widgets_buttons_with_note {
+    margin-bottom: $marginbig;  
+}
+
+.button {
+    display: inline-block;
+    padding: 17px 50px;
+    margin-right: 10px;
+    color: white;
+    background-color: $black;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    vertical-align: top;
+    border: 2px solid $black;
+    cursor: pointer;
+    &:hover {
+        background-color: #cacaca;
+        border: 2px solid #cacaca;
+        color: $black;
+    }
+
+    > span {
+        min-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.button__white {
+    background-color: #f0f0f0;
+    color: $black;
+    margin-right: 10px;
+    border: 2px solid #f0f0f0;
+    &:hover {
+        border: 2px solid #cacaca;
+        background-color: #cacaca;
+        color: $black;
+    }
+}
+
+.button__white-onblack,
+.button__black-onblack {
+    min-width: 300px;
+    text-align: center;
+}
+
+.button__white-onblack {
+    background-color: #fff;
+    color: $black;
+    border: 2px solid white;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer__form .button__white-onblack {
+    margin-bottom: 0px;
+}
+
+.button__black-onblack {
+    border: 2px solid white;
+    // margin-right: 0;
+}
+
+.open__doors-btns .button__white {
+    margin-bottom: 10px;
+}
+
+
+.buttons__nopadding {
+    margin-bottom: $marginM;
+    .button {
+        margin-right: 1.3rem;
+    }
+} 
+
+.buttons__social {
+    display: inline-block;
+    margin-right: 10px;
+    .button {
+        margin-bottom: 10px;
+    }
+}
+
+.buttons.buttons__nopadding-left {
+    padding-left: 0px;
+    padding-right: 0px;
+} 
+
+.button___withtext-wrap.buttons__padding-left {
+    padding-left: 7.5rem;
+} 
+
+.button___withtext-wrap {
+    margin-bottom:$marginM;
+} 
+
+.information__item-bottom-small a.button {
+    color: white;
+    min-width: 280px;
+    text-align: center;
+}
+
+.information__item-bottom-small a.button__white {
+    color: $black;
+}
+
+
+.button.button__social {
+    margin-right: 10px;
+    padding: 0 0;
+    width: 62px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin-bottom: 15px;
+    transition: 0.2s;
+    &.button__social-vk {
+        background-image: image_url('new_hope_images/vk_black.svg');
+    }
+    &.button__social-fb {
+        background-image: image_url('new_hope_images/fb_black.svg');
+    }
+    &.button__social-in {
+        background-image: image_url('new_hope_images/in_black.svg');
+    }
+    &.button__social-vim {
+        background-image: image_url('new_hope_images/vim_black.svg');
+    }
+    &.button__social-yt {
+        background-image: image_url('new_hope_images/yt_black.svg');
+    }
+    &.button__social-tg {
+        background-image: image_url('new_hope_images/tg_black.svg');
+    }
+    &.button__social-tw {
+        background-image: image_url('new_hope_images/tw_black.svg');
+    }
+    &.button__social-mail {
+        background-image: image_url('new_hope_images/mail_black.svg');
+    }
+    &.button__social-share {
+        background-image: image_url('new_hope_images/share_black.svg');
+    }
+}
+
+.button__social.button__white:hover {
+    background-color: #cacaca;
+    // border: 1px solid #cacaca;
+}
+
+// .art__light {
+//     .buttons {
+//         // padding-left: 45%; 
+//         padding-right: 0;
+//     }
+
+//     .button__art-noborder  {
+//         border-left: none !important;
+//         border-right: none !important;
+//         border-top: none !important;
+//         border-bottom: none !important;
+//     }
+// }
+
+// .button__art, .art__light .button {
+//     border: solid 1px #17181a;
+//     background-color: inherit;
+//     color: $black;
+//     letter-spacing: 2px;
+//     font-weight: normal;
+//     line-height: 1.25;
+//     margin-bottom: 15px;
+//     &:hover {
+//         border: solid 1px #17181a;
+//         background-color: inherit;
+//         color: grey; 
+//     }
+// }
+
+// .button__art-noborder, .art__light .button__art-noborder {
+//     border: none;
+//     background-color: inherit;
+//     color: $black !important;
+//     letter-spacing: 2px;
+//     font-weight: normal;
+//     line-height: 1.25;
+//     &:hover {
+//         border: none;
+//         background-color: inherit;
+//         color: grey; 
+//     }
+
+//     span {
+//         display: inline-block;
+//         border-bottom: solid 1px #979797;
+//         padding-left: 10px;
+//         padding-right: 10px;
+//     }
+// }
+
+// .button__art-small, .art__light .button__art-small {
+//     border: none;
+//     background-color: inherit;
+//     color: $black !important;
+//     font-size: 1rem;
+//     line-height: 1.5;
+//     padding-left: 0;
+//     font-weight: normal;
+//     line-height: 1.5;
+//     letter-spacing: 4px;
+//     border-bottom: solid 1px #979797;
+//     border-top: none !important;
+//     border-right: none !important;
+//     border-left: none !important;
+//     text-transform: uppercase;
+//     padding-bottom: 0px;
+//     padding-right: 0;
+//     min-width: auto !important;
+//     &:hover {
+//         border: none;
+//         background-color: inherit;
+//         color: grey; 
+//     }
+
+//     span {
+//         padding-top: 5px;
+//         display: inline-block;
+//         border-bottom: solid 1px #979797;
+//     }
+// }
+
+// .art__search-btns {
+//     margin-bottom: 50px;
+//     a {
+//         margin-bottom: 15px;
+//     }
+// }
+
+// .art__search-wrap {
+//     margin-bottom: 5rem;
+//     input[type="text"] {
+//         padding: 17px 50px;
+//         text-align: center;
+//         border: solid 1px #17181a;
+//         background-color: inherit;
+//         color: $black;
+//         letter-spacing: 2px;
+//         font-weight: normal;
+//         line-height: 1.25;
+//         margin-bottom: 15px;
+//     }
+// }
+
+// .button__art-active {
+//     color: white;
+//     background-color: $black;
+// }
+
+.button__white.disable_hover:hover {
+    background: #f0f0f0;
+    border: 2px solid #f0f0f0;
+  }
+// .art__light .information__item-bottom-small a.button {
+//     // border-bottom: none;
+// }
+
+.button-all__news-events {
+    padding-left: 0;
+}
+
+.newspaper__share-tags a {
+    color: #000;
+}
+
+a.button__blue {
+    background-color: #007acc;
+    color: white;
+    border: 2px solid #007acc;
+    &:hover  {
+        background-color: #007acc;
+        color: white;
+        border: 2px solid #007acc; 
+    }
+}
+a.button__blue_vars {
+    background-color: #007acc;
+    color: white;
+    border: 2px solid #007acc;
+    &:hover  {
+        background-color: #007acc;
+        color: white;
+        border: 2px solid #007acc; 
+    }
+}
+
+a.button__select {
+    color: white;
+    &[disabled] {
+        background-color: #f0f0f0;
+        color: white;
+        border: 2px solid #f0f0f0;
+        pointer-events: none;
+    }
+}
+
+.js__block-item.widgets_button_with_note {
+    margin-top: $marginnegative;
+    margin-bottom: $marginbig;
+}
+
+.js__block-item.widgets_buttons + .js__block-item.widgets_buttons  {
+    margin-top: $marginnegative;
+}
+
+.js__block-item.widgets_buttons .button {
+    margin-top: 10px;
+}
+
+
+.js__block-item.widgets_buttons + .widgets_news_share {
+    margin-top: $marginnegative;
+}
+
+.information__item-bottom-small a.button.width320, .button.width320 {
+    min-width: 320px;
+}
+
+@media(max-width: 1440px) {
+    .button {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 990px) {
+
+
+    .information__item-bottom-small a.button.width320, .button.width320 {
+        min-width: 200px;
+    }
+
+    .information__item-bottom-small .button {
+        margin-right: 6vw;
+        width: calc(100% - 7.5px);
+    }
+    
+
+    .js__block-item.widgets_buttons + .js__block-item.widgets_buttons  {
+        margin-top: $marginnegativemobile;
+    }
+    .js__block-item.widgets_buttons + .widgets_news_share {
+        margin-top: $marginnegativemobile;
+    }
+    .js__block-item.widgets_buttons {
+        margin-bottom: $marginL;
+    }
+
+    .js__block-item.widgets_button_with_note {
+        margin-bottom: $marginMmobile;
+    }
+
+    .button___withtext-wrap.buttons__padding-left {
+        padding-left: 0;
+    }
+
+    .price__buttons .button__white {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .button___withtext-block {
+        flex-direction: column;
+        .button___subtext {
+            max-width: 100%;
+        }
+        .button {
+            margin-right: 0px;
+        }
+    }
+
+    
+    .header__private a.header__tel-btn {
+        margin-right: 0 !important;
+    }
+
+    .button__white-onblack {
+        margin-right: 0;
+    }
+
+    
+    .buttons {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+
+    .button {
+        padding: 17px 30px;
+        padding: 21px 30px;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.25;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+
+    .news__subscribe-form .button {
+        min-width: auto;
+        width: 100%;
+        margin-right: 0;
+    } 
+
+    .buttons__form {
+        margin-bottom: 2rem;
+    }
+
+
+    .button.button__social {
+        margin-bottom: 0;
+    }
+
+    .buttons .button + .button {
+        margin-top: $marginSmobile;
+    }
+
+    .js__block-item.widgets_buttons .button {
+        margin-top: $marginSmobile;
+    }    
+
+    .buttons__social .button {
+        margin-top: $marginSmobile;
+    }
+
+    .buttons__social .button + .button + .button {
+        margin-top: $marginSmobile;
+    }
+
+    .buttons .button + .button + .button {
+        margin-top: $marginSmobile;
+    }
+
+    .information__item-bottom-small .button {
+        margin-bottom: 0;
+    }
+
+    .information__item-bottom-small .button + .button {
+        margin-top: $marginSmobile;
+    }
+
+    .button___withtext-wrap {
+        margin-bottom: 0;
+    }
+
+
+}
