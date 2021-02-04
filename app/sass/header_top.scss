@@ -1,0 +1,147 @@
+@import 'fonts';
+@import 'vars';
+@import 'footer';
+.header__private .header__top {
+    // padding-top: 12px;
+    // padding-bottom: 12px;
+    // background-color: $black;
+    border-bottom: solid 1px #d1d1d1;
+    color: #fff;
+    min-height: 46px;
+}
+
+.header__private .header__top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.header__private .header__top-left {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.header__private .header__top-logo-school {
+    padding-top: 0px;
+    a {
+        display: inline-block;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+}
+
+.header__private .header__top-logo-hse {
+    margin-right: 10px;
+    a {
+        display: block;
+    }
+}
+
+.header__private .header__top-org-name {
+    display: none;
+    position: relative;
+    top: 2px;
+    margin-right: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 0.9rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.7);
+    a {
+        color: rgba(255, 255, 255, 0.7);
+        display: block;
+    }
+}
+
+.header__private .header__top-right {
+    display: flex;
+    align-items: center;
+}
+
+.header__private .header__private .header__top-left-line {
+    margin-right: 20px;
+    width: 1px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header__private div.header__top-logo-school-light {
+    display: none;
+}
+
+.header__private .header__top-arr {
+    display: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+    // position: absolute;
+    background-image: image_url('new_hope_images/header-hamb.svg');
+    left: 50%;
+    background-size: 100% 100%;
+    top: 5px;
+}
+
+.is__hidden .header__top-arr {
+    display: block;
+}
+
+.header__private .header__top-left-line {
+    display: none;
+    margin-right: 20px;
+    width: 1px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    height: 27px;
+}
+
+.header__private .header__top-org-name a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 370px) {
+    .header__top-org-name {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .is__hidden .header__top-arr {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__top-left-line {
+        display: none;
+    }
+    .header__private .header__top-logo-hse {
+        margin-right: 8px !important;
+        width: 30px;
+        margin-left: -9px;
+        img {
+            max-width: 100%;
+        }
+    }
+    .header__private .header__top-org-name {
+        top: 0px
+    }
+}
+
+@media (max-width: 990px) {
+    .header__private .header__top-logo-school {
+        padding-top: 0;
+    }
+    .header__top-hole {
+        height: 150px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .header__top-left {
+        align-items: center;
+    }
+}
