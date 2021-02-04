@@ -212,6 +212,8 @@ header.header__private {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 25px;
+    white-space: nowrap;
+    overflow-x: scroll;
     a {
         font-family: 'HSESansRegular';
         margin-right: 1.4rem;
@@ -727,6 +729,11 @@ header.header__private {
     opacity: 1 !important;
 }
 
+.header__private .header__menu-small::-webkit-scrollbar,
+.header__private .header__menu-big::-webkit-scrollbar {
+    width: 0;
+}
+
 .header__private,
 .footer_private {
     @import 'media';
@@ -785,6 +792,12 @@ header.header__private {
     }
     .lab_header+.first_level.js__block-item.widgets_header {
         margin-top: 10rem;
+    }
+}
+
+@media (min-width: 930px) and (max-width:990px) {
+    .header__private .header__menu-big {
+        padding-bottom: 35px;
     }
 }
 
@@ -908,5 +921,11 @@ header.header__private {
 @media (min-width: 990px) {
     .header__private a.header__tel-btn {
         margin-right: 20px;
+    }
+}
+
+@media(min-width: 1100px) {
+    .header__private .header__menu-small {
+        margin-bottom: 5px;
     }
 }
