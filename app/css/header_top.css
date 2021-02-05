@@ -95,6 +95,9 @@
   padding-bottom: 30px;
   color: rgba(255, 255, 255, 0.8); }
 
+.footer_private .footer {
+  margin-top: 0; }
+
 .footer__top {
   margin-bottom: 2rem; }
 
@@ -347,6 +350,13 @@ body.t-body {
   line-height: 1.5;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
+
+.footer_private .container-fluid {
+  max-width: 1600px; }
+
+.footer_private .footer__top-item p {
+  margin-top: 0;
+  font-size: 16px; }
 
 @media (max-width: 1600px) {
   .footer__menu-top {
