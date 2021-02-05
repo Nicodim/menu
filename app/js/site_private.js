@@ -5157,13 +5157,29 @@ $(document).ready(function() {
         })
 });
 
-$(document).ready(function() {
+const slider = document.querySelector('.header__menu-small');
+let isDown = false;
+let startX;
+let scrollLeft;
 
-    $('html, body, *').mousewheel(function(e, delta) {
-        // multiplying by 40 is the sensitivity, 
-        // increase to scroll faster.
-        this.scrollLeft -= (delta * 40);
-        e.preventDefault();
-    });
-
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    slider.scrollLeft = scrollLeft - walk;
 });

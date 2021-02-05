@@ -10,6 +10,11 @@
     position: relative;
 }
 
+.header__private .header__menu-overflow,
+.footer_private .header__menu-overflow {
+    overflow: hidden;
+}
+
 .header__private .header__menu-big {
     display: flex;
     justify-content: space-between;
@@ -46,6 +51,11 @@
     margin-bottom: 25px;
     white-space: nowrap;
     overflow-x: scroll;
+    overflow-y: hidden;
+    transition: all 0.2s;
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
     a {
         font-family: 'HSESansRegular';
         margin-right: 1.4rem;
@@ -77,7 +87,7 @@
 
 .header__private .header__menu-small::-webkit-scrollbar,
 .header__private .header__menu-big::-webkit-scrollbar {
-    width: 0;
+    display: none;
 }
 
 @media (max-width: 576px) {
@@ -92,15 +102,14 @@
     }
 }
 
-@media (min-width: 990px) {
-    .header__private .header__menu-big,
-    .header__private .header__menu-small {
-        overflow-x: scroll;
-        white-space: nowrap;
-        flex-flow: nowrap;
-    }
-}
-
+// @media (min-width: 990px) {
+//     .header__private .header__menu-big,
+//     .header__private .header__menu-small {
+//         // overflow-x: scroll;
+//         // white-space: nowrap;
+//         flex-flow: nowrap;
+//     }
+// }
 @media (max-width: 990px) {
     .header__private .header__menu-small,
     .header__private .header__menu-big {
@@ -136,35 +145,16 @@
     }
 }
 
-@media(min-width: 1100px) {
-    .header__private .header__menu-small {
-        margin-bottom: 5px;
-    }
-}
-
 @media (max-width: 1100px) {
     .header__menu-small {
-        overflow-x: scroll;
-        white-space: nowrap;
         margin-bottom: -10px;
-        padding-bottom: 10px;
-        // padding-left: 6vw;
+        padding-bottom: 30px;
     }
     .header__private .header__menu-overflow,
     .footer_private .header__menu-overflow {
         overflow: hidden;
         margin-right: -6vw;
-        // margin-left: -6vw;
-        -webkit-overflow-scrolling: touch;
     }
-    // .header__private .header__menu-big,
-    // .footer_private .header__menu-big {
-    //     flex-flow: row nowrap;
-    //     overflow: auto;
-    //     margin-bottom: -10px;
-    //     padding-left: 6vw;
-    //     margin-right: 0;
-    // }
 }
 
 @media (max-width: 1200px) {

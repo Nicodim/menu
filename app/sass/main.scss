@@ -46,85 +46,12 @@
             position: relative;
         }
         
-        // .header__private .header__achor {
-        //     position: fixed;
-        //     left: 0;
-        //     right: 0;
-        //     top: 56px;
-        //     background-color: #fff;
-        //     z-index: 4;
-        // }
         .header__top-hole.header__private {
             height: 165px;
         }
         
-        // .header__private .header__top {
-        //     // padding-top: 12px;
-        //     // padding-bottom: 12px;
-        //     // background-color: $black;
-        //     border-bottom: solid 1px #d1d1d1;
-        //     color: #fff;
-        //     min-height: 46px;
-        // }
-        // .header__private .header__top-container {
-        //     display: flex;
-        //     justify-content: space-between;
-        //     align-items: center;
-        //     flex-flow: row wrap;
-        //     position: relative;
-        // }
-        // .header__private .header__top-left {
-        //     display: flex;
-        //     flex-flow: row wrap;
-        //     align-items: center;
-        // }
-        // .header__private .header__top-logo-school {
-        //     padding-top: 0px;
-        //     a {
-        //         display: inline-block;
-        //         padding-top: 13px;
-        //         padding-bottom: 13px;
-        //     }
-        // }
-        // .header__private .header__top-logo-hse {
-        //     margin-right: 10px;
-        //     a {
-        //         display: block;
-        //     }
-        // }
-        // .js__block-item.widgets_header {
-        //     margin-bottom: $marginL;
-        //     margin-top: $marginL;
-        // }
-        // .header__private .header__top-org-name {
-        //     display: none;
-        //     position: relative;
-        //     top: 2px;
-        //     margin-right: 20px;
-        //     font-weight: normal;
-        //     font-style: normal;
-        //     font-stretch: normal;
-        //     font-size: 0.9rem;
-        //     line-height: 2.4rem;
-        //     letter-spacing: 0.3px;
-        //     color: rgba(255, 255, 255, 0.7);
-        //     a {
-        //         color: rgba(255, 255, 255, 0.7);
-        //         display: block;
-        //     }
-        // }
-        // .header__private .header__top-right {
-        //     display: flex;
-        //     align-items: center;
-        // }
-        // .header__private .header__private .header__top-left-line {
-        //     margin-right: 20px;
-        //     width: 1px;
-        //     border-right: 1px solid rgba(255, 255, 255, 0.3);
-        // }
         .header__private a.header__tel-btn {
             display: inline-block;
-            // margin-right: 20px;
             width: 32px;
             height: 32px;
             background-color: rebeccapurple;
@@ -149,271 +76,10 @@
             justify-content: center;
         }
         
-        // .header__private .header__menu {
-        //     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
-        //     margin-top: 0;
-        //     padding-top: 25px;
-        //     z-index: 10;
-        //     background: white;
-        //     position: relative;
-        // }
-        // .header__private .header__menu-big {
-        //     display: flex;
-        //     justify-content: space-between;
-        //     margin-bottom: 18px;
-        //     margin-right: -5px;
-        //     margin-left: -5px;
-        //     a {
-        //         font-size: 1.2rem;
-        //         font-family: "HSE Sans";
-        //         color: $black;
-        //         font-weight: 600;
-        //         line-height: 1.2;
-        //         letter-spacing: normal;
-        //         margin-right: 10px;
-        //         padding-left: 5px;
-        //         padding-right: 5px;
-        //         &:hover {
-        //             color: grey;
-        //         }
-        //         &:last-child {
-        //             margin-right: 0;
-        //         }
-        //     }
-        //     a.active {
-        //         border-bottom: 3px solid black;
-        //         padding-left: 5px;
-        //         padding-right: 5px;
-        //     }
-        // }
-        // .lab_header .header__private .header__menu-big a {
-        //     margin-right: 20px;
-        //     &:last-child {
-        //         margin-right: 0;
-        //     }
-        // }
-        // .lab_header .header__top {
-        //     padding-top: 8px;
-        //     padding-bottom: 8px;
-        // }
-        // .header__private .header__menu-small {
-        //     display: flex;
-        //     justify-content: flex-start;
-        //     margin-bottom: 25px;
-        //     white-space: nowrap;
-        //     overflow-x: scroll;
-        //     a {
-        //         font-family: 'HSESansRegular';
-        //         margin-right: 1.4rem;
-        //         color: $black;
-        //         font-weight: normal;
-        //         font-size: 1rem;
-        //         letter-spacing: normal;
-        //         &:hover {
-        //             color: grey;
-        //         }
-        //     }
-        // }
         .header__private div.header__top-logo-school-light {
             display: none;
         }
         
-        // .art__light {
-        //     .header__private {
-        //         .header__top {
-        //             background: white;
-        //             border-bottom: 1px solid rgba(0, 0, 0, 0.3)
-        //         }
-        //         .header__top-right {
-        //             display: none;
-        //         }
-        //         .header__menu {
-        //             border-bottom: solid 1px rgba(0, 0, 0, 0.3);
-        //         }
-        //     }
-        //     h1.h1__logo {
-        //         margin-top: 0;
-        //     }
-        //     header+.js__block-item.widgets_header {
-        //         margin-top: $marginL + $marginM;
-        //     }
-        //     a.header__top-logo-school-regular {
-        //         display: none;
-        //     }
-        //     a.header__top-logo-art {
-        //         opacity: 0.2;
-        //         transition: 0.2s;
-        //         &:hover {
-        //             opacity: 1;
-        //         }
-        //     }
-        //     .header__private div.header__top-logo-school-light {
-        //         display: inline-block;
-        //         img:nth-child(1) {
-        //             margin-right: 5px;
-        //         }
-        //     }
-        // }
-        // .lab_header {
-        //     .header__private .header__menu-big {
-        //         margin-bottom: 0px;
-        //     }
-        //     .header__private .header__menu-big a {
-        //         margin-bottom: 0px;
-        //     }
-        //     .header__top-hole.header__private {
-        //         height: 70px;
-        //     }
-        //     .header__private {
-        //         .header__top {
-        //             background: white;
-        //             border-bottom: 1px solid #d1d1d1;
-        //         }
-        //     }
-        //     .header__top-logo-school {
-        //         margin-right: 20px;
-        //     }
-        //     .header__top-container {
-        //         display: flex;
-        //         justify-content: space-between;
-        //     }
-        //     .header__top-middle {
-        //         flex: 1;
-        //         display: flex;
-        //         justify-content: flex-start;
-        //     }
-        //     a.header__top-logo-school-regular {
-        //         display: none;
-        //     }
-        //     a.header__top-logo-art {
-        //         opacity: 0.2;
-        //         transition: 0.2s;
-        //         &:hover {
-        //             opacity: 1;
-        //         }
-        //     }
-        //     a.header__top-logo-school-regular {
-        //         display: none;
-        //     }
-        //     .header__private div.header__top-logo-school-light {
-        //         display: inline-block;
-        //         img:nth-child(1) {
-        //             margin-right: 5px;
-        //         }
-        //     }
-        //     .header__private .header__lang {
-        //         color: $black;
-        //     }
-        //     .header__menu-big-item {
-        //         border-bottom: 3px solid white;
-        //         font-size: 1.2rem;
-        //         font-family: "HSE Sans";
-        //         color: $black;
-        //         font-weight: 600;
-        //         line-height: 1.2;
-        //         letter-spacing: normal;
-        //         margin-right: 45px;
-        //         padding-top: 5px;
-        //         padding-left: 5px;
-        //         padding-right: 5px;
-        //         &:hover {
-        //             color: grey;
-        //         }
-        //         &:last-child {
-        //             margin-right: 0;
-        //         }
-        //     }
-        //     .header__menu-big-item.active {
-        //         border-bottom: 3px solid black;
-        //         padding-left: 5px;
-        //         padding-right: 5px;
-        //     }
-        // }
-        // .lab_header .is__hidden .header__menu-big {
-        //     animation: none;
-        // }
-        // @media (max-width: 1000px) {
-        // .lab_header .header__private .is__hidden .header__menu-big {
-        //     animation-name: header__menu-upper_lab;
-        //     animation-duration: 0.5s;
-        // }
-        // @keyframes header__menu-upper_lab {
-        //     from {
-        //         position: relative;
-        //         top: 0px;
-        //     }
-        //     to {
-        //         position: relative;
-        //         top: -70px;
-        //     }
-        // }
-        // .lab_header {
-        //     .header__private .container-fluid__menu {
-        //         // padding-bottom: .5rem;
-        //         // padding-top: .5rem;
-        //     }
-        //     .header__top-hole.header__private {
-        //         height: 80px;
-        //     }
-        //     .header__top-container {
-        //         flex-wrap: wrap;
-        //     }
-        //     .header__top-middle {
-        //         order: 3;
-        //         width: 100%;
-        //     }
-        //     .header__top-left {
-        //         width: 50%;
-        //     }
-        //     .header__top-right {
-        //         justify-content: flex-end;
-        //         width: 50%;
-        //     }
-        // }
-        // }
-        // @media (max-width: 990px) {
-        // .lab_header {
-        //     // margin-bottom: 50px;
-        //     .header__top-left {
-        //         width: 100%;
-        //     }
-        //     .header__top-middle {
-        //         order: 3;
-        //         width: 100%;
-        //     }
-        //     .header__top-right {
-        //         display: block;
-        //         position: fixed;
-        //         right: 6vw;
-        //         top: 10px;
-        //         left: auto;
-        //         text-align: right;
-        //         width: 20px;
-        //         .header__lang {
-        //             margin-right: 0px;
-        //         }
-        //     }
-        //     .header__top-container {
-        //         display: block;
-        //     }
-        //     .header__private .header__menu-big {
-        //         // padding-left: 0px;
-        //         position: relative;
-        //         left: 0px;
-        //         display: block;
-        //     }
-        // }
-        // }
-        // .header__private .header__menu-small-item-right {
-        //     flex: 1;
-        //     text-align: right;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: flex-end;
-        //     a {
-        //         margin-right: 0;
-        //     }
-        // }
         .header__private h5 {
             font-size: 5.5rem;
             font-family: 'Druk';
@@ -434,44 +100,6 @@
             display: none;
         }
         
-        // .header__private .is__hidden .header__menu-big {
-        //     animation-name: header__menu-upper;
-        //     animation-duration: 0.5s;
-        // }
-        // .header__private .header__top-arr {
-        //     display: none;
-        //     cursor: pointer;
-        //     width: 20px;
-        //     height: 20px;
-        //     margin-left: 25px;
-        //     // position: absolute;
-        //     background-image: image_url('new_hope_images/header-hamb.svg');
-        //     left: 50%;
-        //     background-size: 100% 100%;
-        //     top: 5px;
-        // }
-        // .header__private .header__anchor {
-        //     position: fixed;
-        // }
-        // .header__private .header__anchor-links {
-        //     display: flex;
-        //     justify-content: flex-end;
-        //     padding-top: 20px;
-        //     padding-bottom: 20px;
-        //     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
-        //     a {
-        //         font-size: 1.8rem;
-        //         font-family: "HSE Sans";
-        //         color: $black;
-        //         font-weight: 600;
-        //         line-height: 1.2;
-        //         letter-spacing: 0.4px;
-        //         margin-left: 20px;
-        //         &:hover {
-        //             color: grey;
-        //         }
-        //     }
-        // }
         .is__hidden .header__top-arr {
             display: block;
         }
@@ -495,80 +123,6 @@
             }
         }
         
-        // .header__private .widgets_control {
-        //     padding: 40px;
-        //     margin: 60px;
-        //     background: #fff;
-        // }
-        // .header__private .widgets_images_control {
-        //     padding: 40px;
-        //     margin: 60px;
-        //     background: #fff;
-        //     .wic-slides-sortable-item {
-        //         display: inline-block;
-        //         position: relative;
-        //     }
-        //     .destroy-repeater {
-        //         position: absolute;
-        //         top: 5px;
-        //         right: 5px;
-        //         display: block;
-        //         width: 24px;
-        //         height: 24px;
-        //         background: rgba(0, 0, 0, .5);
-        //         color: #fff;
-        //         text-align: center;
-        //         line-height: 24px;
-        //         font-size: 20px;
-        //         cursor: pointer;
-        //         &:hover {
-        //             opacity: .8;
-        //         }
-        //     }
-        //     .add_from_portfolio_button {
-        //         margin-top: 40px;
-        //         display: inline-block;
-        //         line-height: 30px;
-        //         background: #8ECA5B;
-        //         padding: 10px 20px;
-        //         cursor: pointer;
-        //         &:hover {
-        //             opacity: .8;
-        //         }
-        //     }
-        // }
-        // .header__private .information__item-subtitle.page-edi {
-        //     min-height: 50px;
-        // }
-        // .header__private .static-page {
-        //     .big {
-        //         width: 100%;
-        //         padding: 0px;
-        //     }
-        //     //   h1 {
-        //     //     line-height: 8.5rem;
-        //     //   }
-        //     //  h3 {
-        //     //   font-family: 'Druk';
-        //     //   font-weight: 500;
-        //     //   line-height: 1.09;
-        //     //   font-size: 4.5rem ;
-        //     // }
-        //     img {
-        //         max-width: 100%;
-        //         margin-bottom: 30px;
-        //         margin-top: 10px;
-        //     }
-        //     .article-share {
-        //         margin-top: 50px;
-        //     }
-        //     .static-page-content {
-        //         margin-bottom: 100px;
-        //     }
-        //     table {
-        //         margin-bottom: 40px;
-        //     }
-        // }
         .header__private ul {
             list-style: none;
             padding-left: 0;
@@ -595,9 +149,6 @@
             transform: scale(0.7);
         }
         
-        // .header__private .inner__page-links ul li:before {
-        //     display: none;
-        // }
         .header__private .header__contact {
             display: none;
         }
@@ -648,169 +199,22 @@
             }
         }
         
-        // .header__private .header__top-left-line {
-        //     display: none;
-        //     margin-right: 20px;
-        //     width: 1px;
-        //     border-right: 1px solid rgba(255, 255, 255, 0.3);
-        //     height: 27px;
-        // }
-        // .header__lab-books-flex {
-        //     padding-top: 10px;
-        //     padding-bottom: 10px;
-        //     display: flex;
-        //     flex-flow: row wrap;
-        //     a {
-        //         font-family: 'HSESansRegular';
-        //         font-size: 16px;
-        //         font-weight: normal;
-        //         font-stretch: normal;
-        //         font-style: normal;
-        //         line-height: 1.5;
-        //         letter-spacing: normal;
-        //         color: rgba(23, 24, 26, 0.8);
-        //         margin-right: 30px;
-        //         text-decoration: none;
-        //     }
-        // }
-        // .new-hope-online .logo-online-link,
-        // .new-hope-online .logo-design-link {
-        //     pointer-events: bounding-box;
-        // }
-        // .new-hope-online .header__private .header__menu-big a.active {
-        //     border-bottom: 2px solid #0000FF;
-        // }
-        // .new-hope-online .logo-online-link #logo-online-link-stroke {
-        //     transition: 0.2s;
-        // }
-        // .new-hope-online .logo-online-link:hover #logo-online-link-stroke {
-        //     stroke: transparent;
-        // }
-        // .new-hope-online .logo-design-link #logo-design-link-group {
-        //     fill: #8b8b8c;
-        //     transition: 0.2s;
-        // }
-        // .new-hope-online .logo-design-link:hover #logo-design-link-group {
-        //     fill: #000;
-        //     opacity: 1 !important;
-        // }
-        // .header__private .header__menu-small::-webkit-scrollbar,
-        // .header__private .header__menu-big::-webkit-scrollbar {
-        //     width: 0;
-        // }
         .header__private,
         .footer_private {
             @import 'media';
         }
         
-        // @media (max-width: 1400px) {
-        //     .art__light header+.js__block-item.widgets_header {
-        //         margin-top: $marginL + $marginM;
-        //     }
-        // }
-        // @media (max-width: 1200px) {
-        //     .art__light header+.js__block-item.widgets_header {
-        //         margin-top: $marginL + $marginM;
-        //     }
-        // }
         @media (max-width: 990px) {
-            // .art__light header+.js__block-item.widgets_header {
-            //     margin-top: $marginSmobile
-            // }
-            // .header__private .header__top-logo-school {
-            //     padding-top: 0;
-            // }
-            // .header__private .header__menu-big {
-            //     margin-bottom: -20px;
-            //     padding-bottom: 20px;
-            // }
-            // .header__private .header__menu-small {
-            //     margin-bottom: -20px;
-            //     padding-bottom: 20px;
-            // }
             .header__private .header__openday {
                 display: none;
             }
-            // .header__private .header__lang {
-            //     display: inline-block;
-            // }
-            // .person .people-tags {
-            //     margin-bottom: 4rem;
-            // }
-            // .js__block-item.widgets_header {
-            //     margin-bottom: $marginSmobile;
-            //     margin-top: $marginLmobile;
-            // }
-            // .art__light .header__private div.header__top-logo-school-light {
-            //     display: flex;
-            // }
-            // .art__light .header__private div.header__top-logo-school-light img:nth-child(1) {
-            //     height: 10px;
-            //     margin-right: 7px;
-            // }
-            // .art__light a.header__top-logo-art {
-            //     opacity: 1;
-            //     margin-left: 7px;
-            // }
-            // .lab_header+.first_level.js__block-item.widgets_header {
-            //     margin-top: 10rem;
-            // }
         }
         
-        // @media (min-width: 930px) and (max-width:990px) {
-        //     .header__private .header__menu-big {
-        //         padding-bottom: 35px;
-        //     }
-        // }
-        // @media (max-width: 576px) {
-        // .lab_header .header__private .header__menu-big {
-        //     width: calc( 100vw);
-        //     margin-left: -6vw;
-        //     margin-right: -6vw;
-        //     padding-left: calc( 6vw - 9px);
-        //     padding-right: calc( 6vw - 9px);
-        // }
-        // .header__menu-big a:last-child {
-        //     padding-right: calc( 6vw);
-        // }
-        // .header__top-left-line {
-        //     display: none;
-        // }
-        // .header__private .header__lang {
-        //     margin-right: 10px;
-        // }
-        // .header__private .header__top-logo-hse {
-        //     margin-right: 8px !important;
-        //     width: 30px;
-        //     margin-left: -9px;
-        //     img {
-        //         max-width: 100%;
-        //     }
-        // }
-        // .header__private .header__top-org-name {
-        //     top: 0px
-        // }
-        // }
-        // .footer_private .footer {
-        //     margin-top: 0;
-        // }
-        // .footer_private .container-fluid {
-        //     max-width: 1600px;
-        // }
-        // .header__private .header__top-org-name a {
-        //     color: rgba(255, 255, 255, 0.7);
-        // }
         header.header__private {
             font-family: "HSE Sans", sans-serif;
             font-weight: 600;
-            // font-size: 16px;
         }
         
-        // .footer_private .footer__top-item p {
-        //     margin-top: 0;
-        //     font-size: 16px;
-        // }
-        // fonts
         @media (max-width: 1600px) {
             html {
                 font-size: 16px
@@ -868,19 +272,8 @@
             }
         }
         
-        // @media (max-width: 450px) {
-        //     .is__hidden .header__top-arr {
-        //         display: none !important;
-        //     }
-        // }
         @media (min-width: 990px) {
             .header__private a.header__tel-btn {
                 margin-right: 20px;
             }
         }
-        
-        // @media(min-width: 1100px) {
-        //     .header__private .header__menu-small {
-        //         margin-bottom: 5px;
-        //     }
-        // }
