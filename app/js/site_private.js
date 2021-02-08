@@ -5158,6 +5158,7 @@ $(document).ready(function() {
 });
 
 const slider = document.querySelector('.header__menu-small');
+const slider_big = document.querySelector('.header__menu-big')
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -5183,3 +5184,71 @@ slider.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 3; //scroll-fast
     slider.scrollLeft = scrollLeft - walk;
 });
+
+slider_big.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider_big.classList.add('active');
+    startX = e.pageX - slider_big.offsetLeft;
+    scrollLeft = slider_big.scrollLeft;
+});
+slider_big.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider_big.classList.remove('active');
+});
+slider_big.addEventListener('mouseup', () => {
+    isDown = false;
+    slider_big.classList.remove('active');
+});
+slider_big.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider_big.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    slider_big.scrollLeft = scrollLeft - walk;
+});
+
+// let isDown = false;
+// let startX;
+// let scrollLeft;
+// let c = document.querySelector('.header__menu-overflow');
+
+// function addEvent(element, eventType, handler) {
+//     if (element.addEventListener)
+//         element.addEventListener(eventType, handler);
+//     else
+//         element.attachEvent(eventType, handler);
+// }
+// addEvent(c, 'mouseup', function(e) {
+//     let target = e.target.closest('.header__menu-small');
+//     if (target && target.classList.contains('header__menu-small-item')) {
+//         isDown = false;
+//         e.target.classList.remove('active');
+//     }
+// });
+
+// addEvent(c, 'mouseleave', function(e) {
+//     let target = e.target.closest('.header__menu-small');
+//     if (target && target.classList.contains('header__menu-small-item')) {
+//         isDown = false;
+//         e.target.classList.remove('active');
+//     }
+// });
+// addEvent(c, 'mousemove', function(e) {
+//     let target = e.target.closest('.header__menu-small');
+//     if (target && target.classList.contains('header__menu-small-item')) {
+//         if (!isDown) return;
+//         e.preventDefault();
+//         const x = e.pageX - e.target.offsetLeft;
+//         const walk = (x - startX) * 3; //scroll-fast
+//         e.target.scrollLeft = scrollLeft - walk;
+//     }
+// });
+// addEvent(c, 'mousedown', function(e) {
+//     let target = e.target.closest('.header__menu-small');
+//     if (target && target.classList.contains('header__menu-small-item')) {
+//         isDown = true;
+//         e.target.classList.add('active');
+//         startX = e.pageX - e.target.offsetLeft;
+//         scrollLeft = e.target.scrollLeft;
+//     }
+// });

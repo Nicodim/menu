@@ -9,9 +9,6 @@
         @import 'footer';
         @import 'header_top';
         @import 'header_menu';
-        // html {
-        //   font-size: 16px;
-        // }
         .header__private p {
             font-size: 1rem;
         }
@@ -59,21 +56,6 @@
             background-image: image_url('new_hope_images/tel_black.svg');
             background-position: center;
             background-repeat: no-repeat;
-        }
-        
-        .header__private .header__tel-btn-long {
-            display: inline-block;
-            background-color: #2d2f33;
-            color: white;
-            font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 0.3px;
-            text-align: center;
-            width: 150px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         
         .header__private div.header__top-logo-school-light {
@@ -180,10 +162,6 @@
             padding-bottom: 12px;
         }
         
-        .m__short {
-            display: none;
-        }
-        
         .header__private,
         .footer_private {
             @import 'buttons';
@@ -199,20 +177,43 @@
             }
         }
         
-        .header__private,
-        .footer_private {
-            @import 'media';
-        }
-        
+        // .header__private,
+        // .footer_private {
+        //     @import 'media';
+        // }
         @media (max-width: 990px) {
+            .header__private {
+                .container-fluid {
+                    overflow-y: hidden;
+                    padding-left: 6vw;
+                    padding-right: 6vw;
+                }
+                h4 {
+                    font-size: 2.5rem;
+                    line-height: 1.07;
+                    letter-spacing: 0.4px;
+                    margin: 0;
+                    margin-bottom: 1.5rem;
+                }
+            }
             .header__private .header__openday {
                 display: none;
+                margin-right: 10px;
+            }
+            .header__private .header__lang {
+                display: inline-block;
             }
         }
         
         header.header__private {
             font-family: "HSE Sans", sans-serif;
             font-weight: 600;
+        }
+        
+        @media (max-width: 450px) {
+            .container-fluid {
+                overflow-x: hidden;
+            }
         }
         
         @media (max-width: 1600px) {
@@ -275,5 +276,32 @@
         @media (min-width: 990px) {
             .header__private a.header__tel-btn {
                 margin-right: 20px;
+            }
+        }
+        
+        @media (max-width: 1440px) {
+            .header__menu-big-item {
+                margin-right: 30px;
+            }
+            // .header__menu-small {
+            //     flex-flow: row wrap;
+            // }
+            .header__top-left {
+                align-items: center;
+            }
+        }
+        
+        @media (max-width: 1600px) {
+            .container-fluid {
+                padding-left: 9rem;
+                padding-right: 9rem;
+            }
+            .header__menu-big a {
+                margin-bottom: 10px;
+                margin-right: 5px;
+            }
+            .container-fluid__menu {
+                padding-left: 3rem;
+                padding-right: 3rem;
             }
         }

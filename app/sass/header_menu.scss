@@ -45,6 +45,15 @@
     }
 }
 
+.draggable {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+}
+
 .header__private .header__menu-small {
     display: flex;
     justify-content: flex-start;
@@ -90,6 +99,10 @@
     display: none;
 }
 
+.m__short {
+    display: none;
+}
+
 @media (max-width: 576px) {
     .header__menu-big a:last-child {
         padding-right: calc( 6vw);
@@ -107,7 +120,7 @@
 //     .header__private .header__menu-small {
 //         // overflow-x: scroll;
 //         // white-space: nowrap;
-//         flex-flow: nowrap;
+//         // flex-flow: nowrap;
 //     }
 // }
 @media (max-width: 990px) {
@@ -116,7 +129,13 @@
         margin-bottom: -20px;
         padding-bottom: 20px;
     }
-    .header__menu-big-item {
+    .header__private .header__menu-small {
+        overflow-x: scroll;
+        white-space: nowrap;
+        margin-bottom: -10px;
+        padding-bottom: 30px;
+    }
+    .header__private .header__menu-big-item {
         margin-bottom: 15px;
     }
     // .header__menu-big {
@@ -143,28 +162,60 @@
     .header__menu-small a:last-child {
         padding-right: 15px;
     }
+    .header__private {
+        .header__menu-big {
+            flex-flow: row nowrap;
+            overflow: auto;
+            margin-bottom: -10px;
+            // padding-bottom: 10px;
+            // padding-left: 6vw;
+            margin-right: 0;
+        }
+        .header__menu-big a {
+            margin-right: 1.6rem;
+        }
+        .header__menu-big a {
+            margin-right: 1.6rem;
+            white-space: nowrap;
+        }
+        .header__menu-small a {
+            white-space: nowrap;
+        }
+        .header__menu-small a:last-child {
+            padding-right: 15px;
+        }
+    }
 }
 
 @media (max-width: 1100px) {
     .header__menu-small {
+        overflow-x: scroll;
+        white-space: nowrap;
         margin-bottom: -10px;
-        padding-bottom: 30px;
     }
     .header__private .header__menu-overflow,
     .footer_private .header__menu-overflow {
         overflow: hidden;
-        margin-right: -6vw;
+        // margin-right: -6vw;
+        //     margin-right: -6vw;
+        //     margin-left: -6vw;
+        //     -webkit-overflow-scrolling: touch;
     }
 }
 
-@media (max-width: 1200px) {
-    .header__menu-big {
-        flex-flow: row wrap;
+@media (max-width: 1400px) {
+    .header__private .header__menu-big {
         justify-content: flex-start;
-        margin-right: 15px;
+        // margin-right: 15px;
     }
     .header__menu-small-item-right {
         text-align: left;
+    }
+    .m__long {
+        display: none;
+    }
+    .m__short {
+        display: inline-block;
     }
 }
 

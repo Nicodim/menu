@@ -63,6 +63,10 @@
     align-items: center;
 }
 
+.header__private .header__lang {
+    display: inline-block;
+}
+
 .header__private .header__private .header__top-left-line {
     margin-right: 20px;
     width: 1px;
@@ -102,9 +106,27 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
+.header__private .header__tel-btn-long {
+    display: inline-block;
+    background-color: #2d2f33;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    text-align: center;
+    width: 150px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 370px) {
     .header__top-org-name {
         display: none;
+    }
+    .header__private a.header__tel-btn {
+        margin-right: 0 !important;
     }
 }
 
@@ -134,9 +156,16 @@
 @media (max-width: 990px) {
     .header__private .header__top-logo-school {
         padding-top: 0;
+        max-width: 190px;
+        img {
+            max-width: 100%;
+        }
     }
     .header__top-hole {
         height: 150px;
+    }
+    .header__private .header__tel-btn-long {
+        display: none;
     }
 }
 
