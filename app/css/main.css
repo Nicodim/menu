@@ -6352,10 +6352,12 @@ body.t-body {
     padding-right: 15px; } }
 
 @media (max-width: 1100px) {
-  .header__menu-small {
+  .header__private .header__menu-small {
     overflow-x: scroll;
     white-space: nowrap;
     margin-bottom: -10px; }
+  .header__private .header__menu-big {
+    padding-bottom: 20px !important; }
   .header__private .header__menu-overflow,
   .footer_private .header__menu-overflow {
     overflow: hidden; } }
@@ -6421,7 +6423,6 @@ header.header__private {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background-color: rebeccapurple;
   border-radius: 0px;
   background-image: image_url("new_hope_images/tel_black.svg");
   background-position: center;
