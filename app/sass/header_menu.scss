@@ -96,7 +96,7 @@
 
 .header__private .header__menu-small::-webkit-scrollbar,
 .header__private .header__menu-big::-webkit-scrollbar {
-    display: none;
+    width: 0;
 }
 
 .m__short {
@@ -184,10 +184,15 @@
 }
 
 @media (max-width: 1100px) {
+    .header__private .header__menu-overflow,
+    .footer_private .header__menu-overflow {
+        overflow: hidden;
+        width: 100%;
+    }
     .header__private .header__menu-small {
         overflow-x: scroll;
         white-space: nowrap;
-        margin-bottom: -10px;
+        // margin-bottom: -10px;
         // padding-bottom: 20px;
     }
     .header__private .header__menu-big {

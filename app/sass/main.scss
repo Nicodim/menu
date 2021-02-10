@@ -1,307 +1,237 @@
-        .header__private,
-        .footer_private {
-            // @import '/app/bootstrap/bootstrap-reboot';
-            @import "node_modules/bootstrap/scss/bootstrap-grid";
-        }
-        
-        @import 'fonts';
-        @import 'vars';
-        @import 'footer';
-        @import 'header_top';
-        @import 'header_menu';
-        .header__private p {
-            font-size: 1rem;
-        }
-        
-        header.header__private {
-            margin-bottom: 20px;
-            position: fixed;
-            right: 0;
-            left: 0;
-            z-index: 100;
-            top: 0;
-            background-color: #fff;
-        }
-        
-        .header__private .row,
-        .footer_private .row {
-            display: flex;
-            box-sizing: border-box;
-        }
-        
-        .header__private a,
-        .footer_private a {
-            transition: 0.2s;
+.header__private,
+.footer_private {
+    // @import '/app/bootstrap/bootstrap-reboot';
+    @import 'bootstrap/bootstrap-grid';
+}
+
+@import 'fonts';
+@import 'vars';
+@import 'footer';
+@import 'header_top';
+@import 'header_menu';
+header.header__private {
+    margin-bottom: 20px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    top: 0;
+    background-color: #fff;
+}
+
+header.header__private {
+    font-family: "HSE Sans", sans-serif;
+    font-weight: 600;
+}
+
+.header__top-hole.header__private {
+    height: 165px;
+}
+
+.header__private,
+.footer_private {
+    @import 'buttons';
+}
+
+.header__private,
+.footer_private {
+    i,
+    em {
+        font-weight: inherit;
+        font-style: inherit;
+        color: #808080;
+    }
+}
+
+.footer_private .container-fluid {
+    max-width: 1600px;
+}
+
+.header__private .row,
+.footer_private .row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.header__private {
+    p {
+        font-size: 1rem;
+    }
+    a,
+    .footer_private a {
+        transition: 0.2s;
+        text-decoration: none;
+        &:hover {
             text-decoration: none;
-            o &:hover {
-                text-decoration: none;
-                color: grey;
-            }
+            color: grey;
         }
-        
-        .header__private .header__relative {
+    }
+    .header__relative {
+        position: relative;
+    }
+    a.header__tel-btn {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        // background-color: rebeccapurple;
+        border-radius: 0px;
+        background-image: image_url('new_hope_images/tel_black.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    div.header__top-logo-school-light {
+        display: none;
+    }
+    h5 {
+        font-size: 5.5rem;
+        font-family: 'Druk';
+        font-weight: 500;
+        line-height: 1.09;
+        letter-spacing: 1px;
+        color: $black;
+    }
+    h6 {
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: 'HSE Sans';
+        margin-bottom: 40px;
+    }
+    .hidden {
+        display: none;
+    }
+    .is__hidden .header__top-arr {
+        display: block;
+    }
+    .container-fluid__menu {
+        max-width: 1600px;
+    }
+    @keyframes header__menu-upper {
+        from {
             position: relative;
+            top: 0px;
         }
-        
-        .header__top-hole.header__private {
-            height: 165px;
+        to {
+            position: relative;
+            top: -25px;
         }
-        
-        .header__private a.header__tel-btn {
-            display: inline-block;
-            width: 32px;
-            height: 32px;
-            // background-color: rebeccapurple;
-            border-radius: 0px;
-            background-image: image_url('new_hope_images/tel_black.svg');
-            background-position: center;
-            background-repeat: no-repeat;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 1.5rem;
+    }
+    ul li {
+        line-height: 1.5;
+        padding-left: 1.3em;
+        position: relative;
+    }
+    .big ul {
+        margin-bottom: 2.4rem;
+    }
+    ul li:before {
+        content: '■';
+        position: absolute;
+        left: 0px;
+    }
+    .big ul li:before {
+        transform: scale(0.7);
+    }
+    .header__contact {
+        display: none;
+    }
+    .header__contact.footer {
+        padding-top: 30px;
+        padding-bottom: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 46px;
+        z-index: 20;
+        max-height: calc(100vh - 50px);
+        overflow: auto;
+        .footer__top {
+            margin-bottom: 0px;
         }
-        
-        .header__private div.header__top-logo-school-light {
-            display: none;
+    }
+    .header__openday {
+        font-family: 'HSESansRegular';
+        display: inline-block;
+        line-height: 1.5;
+        margin-right: 25px;
+        color: rgba(23, 24, 26, 0.8);
+        font-weight: normal;
+        font-size: 1rem;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+@media (max-width: 990px) {
+    .header__private {
+        .container-fluid {
+            overflow-y: hidden;
+            padding-left: 6vw;
+            padding-right: 6vw;
         }
-        
-        .header__private h5 {
-            font-size: 5.5rem;
-            font-family: 'Druk';
-            font-weight: 500;
-            line-height: 1.09;
-            letter-spacing: 1px;
-            color: $black;
-        }
-        
-        .header__private h6 {
-            font-size: 3rem;
-            font-weight: 600;
-            font-family: 'HSE Sans';
-            margin-bottom: 40px;
-        }
-        
-        .header__private .hidden {
-            display: none;
-        }
-        
-        .is__hidden .header__top-arr {
-            display: block;
-        }
-        
-        .header__private .container-fluid__menu {
-            max-width: 1600px;
-        }
-        
-        .footer_private .container-fluid {
-            max-width: 1600px;
-        }
-        
-        @keyframes header__menu-upper {
-            from {
-                position: relative;
-                top: 0px;
-            }
-            to {
-                position: relative;
-                top: -25px;
-            }
-        }
-        
-        .header__private ul {
-            list-style: none;
-            padding-left: 0;
+        h4 {
+            font-size: 2.5rem;
+            line-height: 1.07;
+            letter-spacing: 0.4px;
+            margin: 0;
             margin-bottom: 1.5rem;
         }
-        
-        .header__private ul li {
-            line-height: 1.5;
-            padding-left: 1.3em;
-            position: relative;
-        }
-        
-        .header__private .big ul {
-            margin-bottom: 2.4rem;
-        }
-        
-        .header__private ul li:before {
-            content: '■';
-            position: absolute;
-            left: 0px;
-        }
-        
-        .header__private .big ul li:before {
-            transform: scale(0.7);
-        }
-        
-        .header__private .header__contact {
+        .header__openday {
             display: none;
+            margin-right: 10px;
         }
-        
-        .header__private .header__contact.footer {
-            padding-top: 30px;
-            padding-bottom: 0;
-            position: absolute;
-            right: 0;
-            left: 0;
-            top: 46px;
-            z-index: 20;
-            max-height: calc( 100vh - 50px);
-            overflow: auto;
-            .footer__top {
-                margin-bottom: 0px;
-            }
-        }
-        
-        .header__private .header__openday {
-            font-family: 'HSESansRegular';
+        .header__lang {
             display: inline-block;
-            line-height: 1.5;
-            margin-right: 25px;
-            color: rgba(23, 24, 26, 0.8);
-            font-weight: normal;
-            font-size: 1rem;
-            padding-top: 12px;
-            padding-bottom: 12px;
         }
-        
-        .header__private,
-        .footer_private {
-            @import 'buttons';
+    }
+}
+
+@media (max-width: 450px) {
+    .header__private .container-fluid {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 1600px) {
+    .header__private .container-fluid {
+        width: auto;
+    }
+}
+
+@media (min-width: 990px) {
+    .header__private a.header__tel-btn {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .header__private {
+        .header__menu-big-item {
+            margin-right: 30px;
         }
-        
-        .header__private,
-        .footer_private {
-            i,
-            em {
-                font-weight: inherit;
-                font-style: inherit;
-                color: #808080;
-            }
+        .header__top-left {
+            align-items: center;
         }
-        
-        // .header__private,
-        // .footer_private {
-        //     @import 'media';
-        // }
-        @media (max-width: 990px) {
-            .header__private {
-                .container-fluid {
-                    overflow-y: hidden;
-                    padding-left: 6vw;
-                    padding-right: 6vw;
-                }
-                h4 {
-                    font-size: 2.5rem;
-                    line-height: 1.07;
-                    letter-spacing: 0.4px;
-                    margin: 0;
-                    margin-bottom: 1.5rem;
-                }
-            }
-            .header__private .header__openday {
-                display: none;
-                margin-right: 10px;
-            }
-            .header__private .header__lang {
-                display: inline-block;
-            }
+    }
+}
+
+@media (max-width: 1600px) {
+    .header__private {
+        .container-fluid {
+            padding-left: 9rem;
+            padding-right: 9rem;
         }
-        
-        header.header__private {
-            font-family: "HSE Sans", sans-serif;
-            font-weight: 600;
+        .header__menu-big a {
+            margin-bottom: 10px;
+            margin-right: 5px;
         }
-        
-        @media (max-width: 450px) {
-            .container-fluid {
-                overflow-x: hidden;
-            }
+        .container-fluid__menu {
+            padding-left: 3rem;
+            padding-right: 3rem;
         }
-        
-        @media (max-width: 1600px) {
-            html {
-                font-size: 16px
-            }
-            .header__private .container-fluid {
-                width: auto;
-            }
-        }
-        
-        @media (max-width: 1550px) {
-            html {
-                font-size: 15.5px
-            }
-        }
-        
-        @media (max-width: 1500px) {
-            html {
-                font-size: 15px
-            }
-        }
-        
-        @media (max-width: 1450px) {
-            html {
-                font-size: 14.5px
-            }
-        }
-        
-        @media (max-width: 1400px) {
-            html {
-                font-size: 14px
-            }
-        }
-        
-        @media (max-width: 1350px) {
-            html {
-                font-size: 13.5px
-            }
-        }
-        
-        @media (max-width: 1300px) {
-            html {
-                font-size: 13px
-            }
-        }
-        
-        @media (max-width: 1250px) {
-            html {
-                font-size: 12.5px
-            }
-        }
-        
-        @media (max-width: 1200px) {
-            html {
-                font-size: 12px
-            }
-        }
-        
-        @media (min-width: 990px) {
-            .header__private a.header__tel-btn {
-                margin-right: 20px;
-            }
-        }
-        
-        @media (max-width: 1440px) {
-            .header__menu-big-item {
-                margin-right: 30px;
-            }
-            // .header__menu-small {
-            //     flex-flow: row wrap;
-            // }
-            .header__top-left {
-                align-items: center;
-            }
-        }
-        
-        @media (max-width: 1600px) {
-            .container-fluid {
-                padding-left: 9rem;
-                padding-right: 9rem;
-            }
-            .header__menu-big a {
-                margin-bottom: 10px;
-                margin-right: 5px;
-            }
-            .container-fluid__menu {
-                padding-left: 3rem;
-                padding-right: 3rem;
-            }
-        }
+    }
+}
