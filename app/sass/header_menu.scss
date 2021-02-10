@@ -18,7 +18,7 @@
 .header__private .header__menu-big {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 18px;
+    // margin-bottom: 18px;
     margin-right: -5px;
     margin-left: -5px;
     a {
@@ -57,7 +57,7 @@
 .header__private .header__menu-small {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -103,40 +103,43 @@
     display: none;
 }
 
-@media (max-width: 576px) {
-    .header__menu-big a:last-child {
-        padding-right: calc( 6vw);
-    }
-}
-
-@media (min-width: 930px) and (max-width:990px) {
-    .header__private .header__menu-big {
-        padding-bottom: 35px;
-    }
-}
-
-// @media (min-width: 990px) {
-//     .header__private .header__menu-big,
-//     .header__private .header__menu-small {
-//         // overflow-x: scroll;
-//         // white-space: nowrap;
-//         // flex-flow: nowrap;
-//     }
-// }
 @media (max-width: 990px) {
-    .header__private .header__menu-small,
-    .header__private .header__menu-big {
-        margin-bottom: -20px;
-        padding-bottom: 20px;
-    }
-    .header__private .header__menu-small {
-        overflow-x: scroll;
-        white-space: nowrap;
-        margin-bottom: -10px;
-        padding-bottom: 30px;
-    }
-    .header__private .header__menu-big-item {
-        margin-bottom: 15px;
+    .header__private {
+        .header__menu-small {
+            overflow-x: scroll;
+            white-space: nowrap;
+            margin-bottom: -20px;
+            padding-bottom: 3px;
+        }
+        .header__menu-big-item {
+            margin-bottom: 15px;
+        }
+        .header__menu {
+            padding-top: 5px;
+        }
+        .header__menu-big {
+            flex-flow: row nowrap;
+            overflow: auto;
+            margin-bottom: -20px;
+            margin-right: 0;
+            padding-bottom: 20px;
+        }
+        .header__menu-big a {
+            margin-right: 1.6rem;
+        }
+        .header__menu-big a {
+            margin-right: 1.6rem;
+            white-space: nowrap;
+        }
+        .header__menu-small a {
+            white-space: nowrap;
+        }
+        .header__menu-small a:last-child {
+            padding-right: 15px;
+        }
+        .header__menu-big a:last-child {
+            padding-right: calc( 6vw);
+        }
     }
     // .header__menu-big {
     //     flex-flow: row nowrap;
@@ -160,34 +163,13 @@
     .header__menu-small a:last-child {
         padding-right: 15px;
     }
-    .header__private {
-        .header__menu-big {
-            flex-flow: row nowrap;
-            overflow: auto;
-            margin-bottom: -10px;
-            margin-right: 0;
-        }
-        .header__menu-big a {
-            margin-right: 1.6rem;
-        }
-        .header__menu-big a {
-            margin-right: 1.6rem;
-            white-space: nowrap;
-        }
-        .header__menu-small a {
-            white-space: nowrap;
-        }
-        .header__menu-small a:last-child {
-            padding-right: 15px;
-        }
-    }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .header__private .header__menu-overflow,
     .footer_private .header__menu-overflow {
         overflow: hidden;
-        width: 100%;
+        // width: 100%;
     }
     .header__private .header__menu-small {
         overflow-x: scroll;
@@ -195,9 +177,9 @@
         // margin-bottom: -10px;
         // padding-bottom: 20px;
     }
-    .header__private .header__menu-big {
-        padding-bottom: 20px !important;
-    }
+    // .header__private .header__menu-big {
+    //     padding-bottom: 20px !important;
+    // }
     .header__private .header__menu-overflow,
     .footer_private .header__menu-overflow {
         overflow: hidden;
@@ -208,25 +190,24 @@
     }
 }
 
-@media (max-width: 1400px) {
-    .header__private .header__menu-big {
-        justify-content: flex-start;
-        // margin-right: 15px;
-    }
-    .header__menu-small-item-right {
-        text-align: left;
-    }
-    .m__long {
-        display: none;
-    }
-    .m__short {
-        display: inline-block;
-    }
-}
-
 @media (max-width: 1440px) {
-    .header__menu-big-item {
-        margin-right: 30px;
+    .header__private {
+        .header__menu-big {
+            justify-content: flex-start;
+            // margin-right: 15px;
+        }
+        .header__menu-small-item-right {
+            text-align: left;
+        }
+        .header__menu-big-item {
+            margin-right: 30px;
+        }
+        .m__long {
+            display: none;
+        }
+        .m__short {
+            display: inline-block;
+        }
     }
 }
 
