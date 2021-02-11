@@ -123,3 +123,11 @@ slider_big.addEventListener('mousemove', (e) => {
 //         scrollLeft = e.target.scrollLeft;
 //     }
 // });
+
+$('.test_container').slick({
+    prewArrow: '.information__item-slider-left',
+    nextArrow: '.information__item-slider-right',
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-edi'
+});
