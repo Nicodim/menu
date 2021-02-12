@@ -110,7 +110,7 @@
     @media (min-width: 900px) and (max-width:989px) {
         .header__private {
             .header__menu-big {
-                padding-bottom: 20px;
+                padding-bottom: 15px;
             }
         }
     }
@@ -139,6 +139,7 @@
             .header__menu-big a {
                 // margin-right: 1.6rem;
                 white-space: nowrap;
+                padding-top: 20px;
             }
             .header__menu-small a {
                 white-space: nowrap;

@@ -124,10 +124,17 @@ slider_big.addEventListener('mousemove', (e) => {
 //     }
 // });
 
+
+$('.test__item-slider').slick({
+    asNavFor: '.test_container',
+    prevArrow: '.test__item-slider-left',
+    nextArrow: '.test__item-slider-right'
+})
+
 $('.test_container').slick({
-    prewArrow: '.information__item-slider-left',
-    nextArrow: '.information__item-slider-right',
+    slidesToShow: 1,
+    slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-edi'
+    asNavFor: '.test__item-slider'
 });
