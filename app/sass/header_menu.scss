@@ -1,3 +1,4 @@
+@import 'vars';
 .header__private .header__menu {
     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
     margin-top: 0;
@@ -16,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     // margin-bottom: 18px;
-    // margin-right: -5px;
+    margin-right: -5px;
     margin-left: -5px;
     padding-bottom: 0;
     a {
@@ -33,7 +34,7 @@
             color: grey;
         }
         &:last-child {
-            margin-right: 0;
+            margin-right: -5px;
         }
     }
     a.active {
@@ -104,14 +105,13 @@
     display: none;
 }
 
-@media (min-width: 900px) and (max-width:989px) {
-    .header__private {
-        .header__menu-big {
-            padding-bottom: 15px;
-        }
-    }
-}
-
+// @media (min-width: 900px) and (max-width:989px) {
+//     .header__private {
+//         .header__menu-big {
+//             padding-bottom: 10px;
+//         }
+//     }
+// }
 @media (max-width: 990px) {
     .header__private {
         .header__menu-small {
@@ -137,6 +137,7 @@
             // margin-right: 1.6rem;
             white-space: nowrap;
             padding-top: 20px;
+            margin-bottom: 5px;
         }
         .header__menu-small a {
             white-space: nowrap;
@@ -228,7 +229,8 @@
 
 @media (max-width: 1600px) {
     .header__menu-big a {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        margin-right: 15px;
         // margin-right: 5px;
     }
 }
